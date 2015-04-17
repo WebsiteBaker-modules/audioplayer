@@ -1,0 +1,68 @@
+/*
+######################################################################################################################
+#
+#	PURPOSE OF THIS FILE: BACKEND.CSS
+#	Provides the module CSS defintions to be used in the backend (e.g. modify.php, tool.php)
+#
+#	INVOKED BY:
+#	With WB 2.6.6 a new function was implemented which automatically links an external module backend.css
+#	file to the <head></head> section of a page. The backend.css is optional. If you want make use
+#	of this option, simply place a backend.css file with the CSS definition into the module directory.
+#
+# 	The backend.css file is automatically invoked by Website Baker when login into the backend
+#	Website Baker versions below 2.6.6 will ignore this file
+#	
+#	NOTE:
+#	All CSS styles, classes... have to stick to the following naming conventions:
+#	mod_MODULE_DIRECTORY_XXXX_b
+#
+#	mod:	shows that the CSS style is defined within a module
+#	MODULE_DIRECTORY:	unique identifier to prevent that CSS styles are overwritten by other modules
+#	XXXX:	your CSS style definition (e.g. emphasise, warning...)
+#	b:	identifier for the backend
+#
+######################################################################################################################
+*/
+
+/*
+  CSS definition for Website Baker module: Hello world
+  Copyright (C) year, Authors name
+  Contact me: author(at)domain.xxx, http://authorwebsite.xxx
+
+  This CSS file is free software. You can redistribute it and/or modify it 
+  under the terms of the GNU General Public License  - version 2 or later, 
+  as published by the Free Software Foundation: http://www.gnu.org/licenses/gpl.html.
+
+  This CSS file is distributed in the hope that it will be useful, 
+  but WITHOUT ANY WARRANTY; without even the implied warranty of 
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+  GNU General Public License for more details.
+*/
+
+.mod_helloworld_table_b {
+  border: 1px dotted gray;
+  background-color: #FFFFE0;
+  padding-left: 5px;
+}
+
+.mod_audioplayer_edit_css {
+  float: right;
+  margin: 0;
+  margin-top: -20px;
+}
+
+/* 
+  The definitions below provide the style for the edit CSS button 
+  You need to replace the string helloworld below with the module directory of your module to get it work
+*/
+input.mod_helloworld_edit_css {
+  color: #000;
+  background-color: #F0F0F0;
+  border: 1px solid gray;
+  padding: 2px;
+  margin: 0;
+  margin-left: 625px;
+  margin-top: -20px;
+  margin-bottom: 5px;
+  width: 110px;
+}
